@@ -42,4 +42,11 @@ setuptools.setup(
     packages=["rockart"],
     python_requires=">=3.6.9",
     setup_requires=["setuptools_scm==3.2.0"],
+    classifiers=[
+        "Environment :: Console",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX :: Linux",
+        "Programming Language :: Python :: 3.6",
+        "Topic :: Terminals",
+    ],
 )
