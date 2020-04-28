@@ -25,10 +25,15 @@ def obtain_version():
         "local_scheme": local_scheme,
     }
 
+with open("README.md", "r") as description_file:
+    long_description = description_file.read()
+
 setuptools.setup(
     name="rockart",
     use_scm_version=obtain_version,
     description="A tool for drawing in terminal using Braille characters",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     keywords="pseudographics semigraphics braille terminal console",
     license="MIT",
     author="van-kalsing",
